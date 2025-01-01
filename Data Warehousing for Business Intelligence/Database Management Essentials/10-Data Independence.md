@@ -1,0 +1,13 @@
+Data independence is a key concept in database management, referring to the idea that a database should have an identity that is separate from the applications (computer programs, forms, and reports) that use it. This separation is crucial because it allows for changes to the database definition without requiring modifications to related applications.
+Here's a breakdown of what data independence entails:
+●
+Separation of Concerns: Data independence ensures that the conceptual meaning of a database is not mixed with its physical implementation or the programs that access it. This separation simplifies database management and software maintenance.
+●
+Reduced Maintenance Costs: By separating the database definition from applications, database specialists can experiment with performance tuning without impacting computer programs. For instance, adding a new column to a table should not affect applications that do not use that column. Similarly, changes to physical storage should not necessitate changes to applications.
+●
+Flexibility and Adaptability: Data independence enables changes to the database structure or implementation without disrupting the applications that rely on the database. This flexibility is essential for adapting to changing business needs.
+●
+Three Schema Architecture: The concept of data independence led to the proposal of the Three Schema Architecture, which includes the external, conceptual, and internal levels, each serving a different function. This architecture enables the transformation of data requests between different levels, maintaining data independence.
+●
+Mappings: The DBMS uses mappings to transform application requests from the external view to the conceptual schema and then to the internal schema. This process ensures that applications are not directly dependent on the physical storage details of the database.
+In essence, data independence means that changes to the database structure or storage can be made without impacting the applications, forms, and reports that access the data. This separation of concerns makes database management more efficient and less costly. The Three Schema Architecture facilitates this by providing different levels of abstraction, where applications interact at the external level and are shielded from the details of the conceptual and internal levels. This separation is crucial for ensuring that a database can evolve over time without requiring extensive and costly changes to the applications that depend on it.
